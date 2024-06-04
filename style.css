@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('images/fondo.jpg'); /* Reemplaza 'image.png' con la ruta correcta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#score {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    gap: 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.gem {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gem.red {
+    background-color: red;
+}
+
+.gem.blue {
+    background-color: blue;
+}
+
+.gem.green {
+    background-color: green;
+}
+
+.gem.yellow {
+    background-color: yellow;
+}
+
+.selected {
+    border: 2px solid white;
+}
